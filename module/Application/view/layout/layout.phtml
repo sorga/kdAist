@@ -1,0 +1,328 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('kdAist Live from Pereslavskoe '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/firefox_new-min.css')
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/tabzilla.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                      ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.min.js')
+                                      ->prependFile($this->basePath() . '/js/firefox-resp-min.js')
+                                      ->prependFile($this->basePath() . '/js/firefox_new-min.js') 
+                                      ->prependFile($this->basePath() . '/js/ga.js') 
+                                      ->prependFile($this->basePath() . '/js/inpage_linkid.js') 
+                                      ->prependFile($this->basePath() . '/js/site-min.js') 
+                                      ->prependFile($this->basePath() . '/js/tabzilla.js') 
+                
+                ?>
+
+    </head>
+ 
+        
+   <body id="firefox-new" class="html-ltr sky ready-for-scene2">
+       <div id="tabzilla-panel" class="tabzilla-closed" tabindex="-1"><div id="tabzilla-contents">  
+               <div id="tabzilla-promo">    
+                   <div class="snippet" id="tabzilla-promo-mwc">    
+                       <a href="https://www.mozilla.org/firefox/partners/">     
+                           <h4>Firefox OS debuts <span>at Mobile World Congress!</span></h4>     
+                           <p>Learn more »</p>
+                       </a>    
+                   </div>  
+               </div>  
+               <div id="tabzilla-nav">    
+                   <ul>      
+                       <li><h2>Mozilla</h2>        
+                           <ul>          
+                               <li><a href="https://www.mozilla.org/mission/">Mission</a></li>          
+                               <li><a href="https://www.mozilla.org/about/">About</a></li>          
+                               <li><a href="https://www.mozilla.org/projects/">Projects</a></li>          
+                               <li><a href="https://support.mozilla.org/">Support</a></li>          
+                               <li><a href="https://developer.mozilla.org/">Developer Network</a></li>        
+                           </ul>      
+                       </li>      
+                       <li><h2>Products</h2>        
+                           <ul>          
+                               <li><a href="https://www.mozilla.org/firefox">Firefox</a></li>          
+                               <li><a href="https://www.mozilla.org/thunderbird">Thunderbird</a></li>         
+                               <li><a href="https://www.mozilla.org/firefoxos">Firefox OS</a></li>        
+                           </ul>      </li>      <li><h2>Innovations</h2>        
+                           <ul>          <li><a href="https://webfwd.org/">WebFWD</a></li>          
+                               <li><a href="https://mozillalabs.com/">Labs</a></li>         
+                               <li><a href="https://webmaker.org/">Webmaker</a></li>         
+                               <li><a href="https://www.mozilla.org/research/">Research</a></li>       
+                           </ul>      
+                       </li>      
+                       <li><h2>Get Involved</h2>        
+                           <ul>          
+                               <li><a href="https://www.mozilla.org/contribute/">Volunteer</a></li>          
+                               <li><a href="https://www.mozilla.org/en-US/about/careers.html">Careers</a></li>          
+                               <li><a href="https://www.mozilla.org/en-US/about/mozilla-spaces/">Find us</a></li>          
+                               <li><a href="https://sendto.mozilla.org/Join-Tabzilla">Donate</a></li>       
+                           </ul>      
+                       </li>      
+                       <li id="tabzilla-search">        
+                           <a href="https://www.mozilla.org/community/directory.html">Website Directory</a>        
+                           <form title="Search Mozilla sites" role="search" action="http://www.google.com/cse">         
+                               <input type="hidden" value="002443141534113389537:ysdmevkkknw" name="cx">         
+                               <input type="hidden" value="FORID:0" name="cof">          
+                               <label for="q">Search</label>         
+                               <input type="search" placeholder="Search" id="q" name="q">        
+                           </form>      
+                       </li>    
+                   </ul>  
+               </div></div></div>
+    <div id="strings"></div>
+    <div id="outer-wrapper">
+    <div id="wrapper">
+
+          <header id="masthead">
+        <a href="http://www.mozilla.org/" id="tabzilla" class="tabzilla-closed" role="button" aria-expanded="false" aria-controls="tabzilla-panel" title="Mozilla links">Mozilla</a>
+
+        
+          <h2><a href="http://www.kdaist.ru"><img src="../img/kdAistLogoBig.png" alt="kdAist.ru Live from Pereslavskoe"></a></h2>
+
+        
+      </header>
+    
+    
+    <main role="main">
+  <div id="main-feature">
+    <div class="row">
+      <img src="./kdaist_files/firefox-logo.png" alt="Firefox">
+      <h1 class="large">Different <span>by design</span></h1>
+    </div>
+  </div>
+
+  <div class="theater" id="theater-firefox">
+    <div class="stage" id="stage-firefox">
+      <div class="scene" id="scene1">
+        <div class="container" id="features-download">
+          <ul id="features">
+            <li>Proudly <br>non-profit</li>
+            <li>Innovating<br> for you</li>
+            <li>Fast, flexible,<br> secure</li>
+          </ul>
+
+          <div class="desktop download-button-wrapper">
+            
+
+
+<div id="download-button-desktop-release" class="download-button">
+      <noscript>
+        &lt;div class="download download-dumb"&gt;
+    &lt;h4&gt;Download Firefox — English (US)&lt;/h4&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="https://download.mozilla.org/?product=firefox-19.0.2&amp;amp;os=win&amp;amp;lang=en-US" class="button-green"&gt;Windows&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://download.mozilla.org/?product=firefox-19.0.2&amp;amp;os=linux&amp;amp;lang=en-US" class="button-green"&gt;Linux&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://download.mozilla.org/?product=firefox-19.0.2&amp;amp;os=osx&amp;amp;lang=en-US" class="button-green"&gt;Mac OS X&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-green"&gt;Android&lt;/a&gt;&lt;/li&gt;    &lt;/ul&gt;
+  &lt;/div&gt;
+
+    </noscript>
+    <div class="unrecognized-download">
+        <div class="download download-dumb">
+    <h4>Download Firefox — English (US)</h4>
+    <ul>
+      <li><a href="https://download.mozilla.org/?product=firefox-19.0.2&os=win&lang=en-US" class="button-green">Windows</a></li><li><a href="https://download.mozilla.org/?product=firefox-19.0.2&os=linux&lang=en-US" class="button-green">Linux</a></li><li><a href="https://download.mozilla.org/?product=firefox-19.0.2&os=osx&lang=en-US" class="button-green">Mac OS X</a></li><li><a href="https://market.android.com/details?id=org.mozilla.firefox" class="button-green">Android</a></li>    </ul>
+  </div>
+
+    </div>
+        <p class="unsupported-download">
+      Your system doesn	 meet the <a href="http://www.mozilla.org/en-US/firefox/19.0.2/system-requirements/">requirements</a> to run Firefox.
+    </p>
+    <ul class="download-list" role="presentation">
+          <li class="os_windows">
+        <a class="download-link" href="https://download.mozilla.org/?product=firefox-19.0.2&os=win&lang=en-US">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">Free Download</span>
+              <span class="download-lang">English (US)</span>
+              <span class="download-platform">Windows</span>
+                      </span>
+        </a>
+      </li>
+          <li class="os_linux">
+        <a class="download-link" href="https://download.mozilla.org/?product=firefox-19.0.2&os=linux&lang=en-US">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">Free Download</span>
+              <span class="download-lang">English (US)</span>
+              <span class="download-platform">Linux</span>
+                      </span>
+        </a>
+      </li>
+          <li class="os_osx">
+        <a class="download-link" href="https://download.mozilla.org/?product=firefox-19.0.2&os=osx&lang=en-US">
+          <span class="download-content">
+                                          <strong class="download-title">Firefox</strong>
+                            <span class="download-subtitle">Free Download</span>
+              <span class="download-lang">English (US)</span>
+              <span class="download-platform">Mac OS X</span>
+                      </span>
+        </a>
+      </li>
+          <li class="os_android">
+        <a class="download-link" href="https://market.android.com/details?id=org.mozilla.firefox">
+          <span class="download-content">
+                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
+                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                    </span>
+        </a>
+      </li>
+      </ul>
+    <small class="download-other os_android">
+    <a href="http://www.mozilla.org/en-US/firefox/mobile/platforms">Supported Devices</a> |
+    <a href="http://www.mozilla.org/en-US/mobile/notes">What’s New</a> |
+    <a href="http://www.mozilla.org/en-US/legal/privacy/firefox.html">Privacy</a>
+  </small>
+        <small class="download-other os_linux os_osx os_windows">
+      <a href="http://www.mozilla.org/en-US/firefox/all.html">Systems &amp; Languages</a> |
+      <a href="http://www.mozilla.org/en-US/firefox/notes">What’s New</a> |
+      <a href="http://www.mozilla.org/en-US/legal/privacy/firefox.html">Privacy</a>
+    </small>
+  </div>
+          </div>
+          <div class="mobile download-button-wrapper">
+            
+
+
+<div id="download-button-mobile-release" class="download-button download-button-mobile">
+    <ul class="download-list" role="presentation">
+          <li class="os_android">
+        <a class="download-link" href="https://market.android.com/details?id=org.mozilla.firefox">
+          <span class="download-content">
+                                          <strong class="download-title"><span>Firefox</span> for Android</strong>
+                                            <span class="download-subtitle">Get it free on Google Play</span>
+                                    </span>
+        </a>
+      </li>
+      </ul>
+    <small class="download-other os_android">
+    <a href="http://www.mozilla.org/en-US/firefox/mobile/platforms">Supported Devices</a> |
+    <a href="http://www.mozilla.org/en-US/mobile/notes">What’s New</a> |
+    <a href="http://www.mozilla.org/en-US/legal/privacy/firefox.html">Privacy</a>
+  </small>
+    </div>
+          </div>
+        </div>
+
+        <div class="desktop" id="firefox-screenshot">
+          <img class="platform-img js windows" src="./kdaist_files/browser.png" data-src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png" alt="Firefox screenshot"><noscript>&lt;img class="platform-img win" src="//mozorg.cdn.mozilla.net/media/img/firefox/new/browser.png" alt="Firefox screenshot"&gt;</noscript>
+        </div>
+      </div> <!-- /#scene1 -->
+
+      <div class="scene" id="scene2">
+        <p class="thankyou" tabindex="0">
+          Thanks for downloading Firefox! As a non-profit, we're free to innovate on your behalf without any pressure to compromise. You're going to love the difference.
+        </p>
+
+        <ol class="installation">
+          <li id="install1">
+            <strong>1.</strong>
+            <span class="install-win">
+              Start the process by clicking Run.
+            </span>
+            Your download should begin automatically. If not, <a id="direct-download-link" href="https://download.mozilla.org/?product=firefox-19.0.2&os=win&lang=en-US">click here</a>. It could take a few minutes, but it’s worth the wait.
+          </li>
+          <li id="install2">
+            <strong>2.</strong>
+            <span class="install-osx">
+              When prompted, drag the Firefox icon into the image of your Applications folder.
+            </span>
+            <span class="install-win">
+              Click Run to launch the Mozilla Firefox setup wizard. Then, just follow the steps (we've made the process as painless as possible).
+            </span>
+          </li>
+          <li id="install3">
+            <strong>3.</strong>
+            <span class="install-osx">
+              Drag the Firefox icon from the Applications folder into the dock. Then, just click on Firefox whenever you want to use the web!
+            </span>
+            <span class="install-win">
+              Now you’re ready to leap boldly into a new era of Web surfing. Double-click on the Firefox icon whenever you want to go online.
+            </span>
+          </li>
+        </ol>
+      </div> <!-- /#scene2 -->
+
+    </div> <!-- /#stage -->
+  </div>
+</main>
+
+
+    
+    </div><!-- close #wrapper -->
+
+      <footer id="colophon">
+    <div class="row">
+      <ul class="primary">
+        <li><a href="http://www.mozilla.org/en-US/firefox/central/"><span>Tour</span></a></li>
+        <li><a href="http://www.mozilla.org/en-US/firefox/features/"><span>Desktop</span></a></li>
+        <li><a href="http://www.mozilla.org/en-US/firefox/fx/"><span>Mobile</span></a></li>
+        <li><a href="https://addons.mozilla.org/"><span>Add-ons</span></a></li>
+        <li><a href="http://support.mozilla.org/"><span>Support</span></a></li>
+        <li><a href="http://www.mozilla.org/en-US/about/"><span>About</span></a></li>
+      </ul>
+      <ul class="secondary">
+        <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
+        <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+      </ul>
+    </div>
+  </footer>
+
+    <script src="./kdaist_files/tabzilla.js"></script>
+    </div><!-- close #outer-wrapper -->
+
+      <script src="./kdaist_files/firefox-resp-min.js"></script>
+      <script src="./kdaist_files/firefox_new-min.js"></script>
+
+           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('kdAist Live from Pereslavskoe') ?></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <?php echo $this->content; ?>
+            <hr>
+            <footer>
+                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+            </footer>
+        </div> <!-- /container -->
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
